@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/marker"
+        android:title="添加标记">
+    </item>
+    <item
+        android:id="@+id/valve"
+        android:title="添加阀门">
+    </item>
+    <item
+        android:id="@+id/heatsite"
+        android:title="添加热站">
+    </item>
+    <item
+        android:id="@+id/heatsource"
+        android:title="添加热源">
+    </item>
+    <item
+        android:id="@+id/monitor"
+        android:title="添加监测点">
+    </item>
+      <item
+        android:id="@+id/clear"
+        android:title="清除">
+    </item>
+
+</menu>

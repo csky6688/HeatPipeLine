@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/location"
+    android:layout_width="100dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <ToggleButton
+        android:id="@+id/loc_open"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textOff="开启"
+        android:textOn="关闭"
+         />
+
+    <RadioGroup
+        android:id="@+id/loc_radioGroup"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" >
+
+        <RadioButton
+            android:id="@+id/loc_radio_normal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"   
+            android:text="普  通" />
+
+        <RadioButton
+            android:id="@+id/loc_radio_follow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="跟  随" />
+
+        <RadioButton
+            android:id="@+id/loc_radio_compass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="罗  盘" />
+    </RadioGroup>
+
+</LinearLayout>

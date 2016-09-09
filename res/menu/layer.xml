@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+   
+    、  <item android:id="@+id/map" android:title="地图" ></item>
+    <item android:id="@+id/pipe" android:title="管网图"></item>
+    <item android:id="@+id/satellite" android:title="卫星图"></item>
+    <item android:id="@+id/heat" android:title="热力图"></item>
+</menu>

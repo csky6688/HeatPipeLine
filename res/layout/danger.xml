@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f0f0"
+    android:orientation="vertical" >
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/danger_bmapView"
+        android:layout_width="fill_parent"
+        android:layout_height="410dp"
+        android:clickable="true" >
+    </com.baidu.mapapi.map.MapView>
+
+    <ListView
+        android:id="@+id/danger_team"
+        android:layout_width="match_parent"
+        android:layout_height="17dp"
+        android:layout_weight="0.01" >
+    </ListView>
+
+</LinearLayout>

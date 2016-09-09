@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="#e3e5e5">
+
+    <ImageButton
+        android:id="@+id/imb_sendmission"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imb_callmanager"
+        android:layout_below="@+id/imb_callmanager"
+        android:src="@drawable/sendmission"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imb_sendmission"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/tv_leader"
+        android:gravity="center"
+        android:text="负责人:" />
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imb_sendmission"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignTop="@+id/imb_sendmission"
+        android:gravity="center"
+        android:text="成   员:" />
+
+    <TextView
+        android:id="@+id/tv_members"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_alignRight="@+id/tv_workNum"
+        android:layout_alignTop="@+id/textView3"
+        android:layout_toRightOf="@+id/textView2"
+        android:gravity="center"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/tv_groupName"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="#FF9900"
+        android:gravity="center"
+        android:text="TextView" />
+
+    <ImageButton
+        android:id="@+id/imb_callmanager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tv_groupName"
+        android:layout_marginRight="16dp"
+        android:src="@drawable/callmanager" />
+
+    <TextView
+        android:id="@+id/tv_workNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imb_callmanager"
+        android:layout_alignTop="@+id/imb_callmanager"
+        android:layout_marginRight="14dp"
+        android:layout_toLeftOf="@+id/imb_callmanager"
+        android:gravity="center"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/tv_leader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv_members"
+        android:layout_alignLeft="@+id/tv_members"
+        android:layout_alignTop="@+id/tv_workNum"
+        android:layout_marginRight="14dp"
+        android:layout_toLeftOf="@+id/tv_workNum"
+        android:text="TextView"
+         android:gravity="center" />
+
+</RelativeLayout>

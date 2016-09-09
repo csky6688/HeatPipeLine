@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">heatpope</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="url">http://192.168.6.16:8080/p5/service/ajax.php?action=ok</string>
+	<string  name="loginUrl">http://192.168.1.106:8080/login/login</string>
+</resources>

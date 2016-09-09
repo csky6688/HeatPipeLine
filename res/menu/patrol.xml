@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <item android:id="@+id/dateString"
+        android:showAsAction="always"
+        android:title="日期"
+        android:actionViewClass="android.widget.TextView"
+        />
+    
+    <item android:id="@+id/date"
+        android:title="日历"
+        android:icon="@drawable/date"
+        android:showAsAction="always"
+        
+        />
+        "
+    <item android:id="@+id/task"
+        android:title="任务"
+        android:icon="@drawable/task"
+        android:showAsAction="always"
+        />
+    
+     <item android:id="@+id/review"
+        android:title="回放"
+        android:icon="@drawable/review"
+        android:showAsAction="always"
+        />
+     
+      <item android:id="@+id/clear"
+        android:title="清除"
+        android:showAsAction="never"
+        />
+
+</menu>

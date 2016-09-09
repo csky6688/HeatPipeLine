@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <item android:id="@+id/dangerArea"
+        android:showAsAction="always"
+         android:icon="@drawable/dangericon"
+        android:title="范围"
+        />
+    
+    <item android:id="@+id/analysis"
+        android:title="分析"
+        android:icon="@drawable/analytics"
+        android:showAsAction="always"
+        
+        />
+     
+      <item android:id="@+id/danger_clear"
+        android:title="清除"
+        android:showAsAction="never"
+        />
+      
+       <item android:id="@+id/danger_note"
+        android:title="通知"
+        android:showAsAction="never"
+        />
+
+</menu>

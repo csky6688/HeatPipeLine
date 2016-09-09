@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f0f0"
+    android:orientation="vertical" >
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/patrol_bmapView"
+        android:layout_width="fill_parent"
+        android:layout_height="374dp"
+        android:layout_weight="1.02"
+        android:clickable="true" >
+    </com.baidu.mapapi.map.MapView>
+
+    <Button
+        android:id="@+id/patrol_btn_begin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_bg"
+        android:text="开始巡检" 
+        android:onClick="initLoc"/>
+
+</LinearLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#e3e5e5" >
+
+        <ImageView
+            android:id="@+id/touxiang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/defaultpic0" />
+
+        <TextView
+            android:id="@+id/tv_user_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/tv_user_id"
+            android:layout_toRightOf="@+id/touxiang"
+            android:text="Large Text"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/tv_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/touxiang"
+            android:layout_weight="1"
+            android:text="Large Text"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/tv_user_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/tv_user_name"
+            android:layout_toRightOf="@+id/touxiang"
+            android:layout_weight="1"
+            android:text="Large Text"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <Button
+            android:id="@+id/btn_user_task"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/touxiang"
+            android:layout_marginRight="16dp"
+            android:layout_toRightOf="@+id/touxiang"
+            android:layout_marginLeft="15dp"
+            android:text="今日任务"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/button_bg"
+            android:onClick="showTaskOfTaday" />
+
+        <Button
+            android:id="@+id/btn_user_copatrol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/btn_user_task"
+            android:layout_alignBottom="@+id/btn_user_task"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:text="开始巡检" 
+            android:layout_marginBottom="3dp"
+             android:layout_marginTop="3dp"
+            android:background="@drawable/button_bg"
+            android:onClick="toPatrol"/>
+          
+    </RelativeLayout>
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/us_bmapView"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:clickable="true" >
+    </com.baidu.mapapi.map.MapView>
+    
+</LinearLayout>

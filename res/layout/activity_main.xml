@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+     >
+
+    <com.baidu.mapapi.map.MapView  
+    android:id="@+id/bmapView"  
+    android:layout_width="fill_parent"  
+    android:layout_height="fill_parent"  
+    android:clickable="true" />
+    
+    <com.guodai.satellite.view.SatelliteMenu
+        android:id="@+id/menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="24dp" />
+
+    <Button
+        android:id="@+id/main_btn_loc"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="23dp"
+        android:background="@drawable/loc"
+        android:onClick="showLocMenu" />
+
+    <Button
+        android:id="@+id/main_btn_layer"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/main_btn_loc"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/main_btn_loc"
+        android:background="@drawable/layers"
+        android:onClick="showPopMenu" />
+
+    <Button
+        android:id="@+id/main_btn_add"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/main_btn_layer"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/main_btn_layer"
+        android:background="@drawable/add"
+        android:onClick="addGeometry" />
+
+</RelativeLayout>
