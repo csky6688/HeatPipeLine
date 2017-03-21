@@ -53,19 +53,12 @@ public class GetDataThread extends Thread {
 	}
 	
 	public HttpURLConnection init() throws Exception{
-		String target ="http://192.168.6.16:8080/p5/service/ajax.php?action=ok";
-
+		String target ="http://192.168.2.23:8080//service/ajax.php?action=ok";
 		URL url = new URL(target);
-
-		HttpURLConnection connection = (HttpURLConnection) url
-				.openConnection();
+		HttpURLConnection connection = (HttpURLConnection) url.openConnection();
 		connection.setReadTimeout(20000);
 		connection.setConnectTimeout(20000);
-		// 区别，默认是发送get请求，现在设置请求方法为POST请求
-		connection.setRequestMethod("POST");
-		
-		// 区别，需要将post的参数写到服务器端
-		
+		connection.setRequestMethod("POST");	
 		return connection;
 	}
 	
@@ -73,12 +66,10 @@ public class GetDataThread extends Thread {
 		this.param=param;
 		HttpURLConnection connection = init();
 		connection.connect();
-		// 区别，需要将post的参数写到服务器端
 		OutputStream os = connection.getOutputStream();
 			String data = param;
 			os.write(data.getBytes("utf-8"));
 			if (connection.getResponseCode() == 200) {
-				
 				InputStream is = connection.getInputStream();
 				ByteArrayOutputStream bao = new ByteArrayOutputStream();
 				byte buffer[] = new byte[1024];
@@ -90,8 +81,7 @@ public class GetDataThread extends Thread {
 				bao.close();
 				final String result = bao.toString();
 				editor.putString(info, result).commit();
-				Log.v("TAG", result);
-				
+				Log.v("TAG", result);			
 				connection.disconnect();
 			}
 	}
