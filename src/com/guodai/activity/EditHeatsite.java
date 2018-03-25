@@ -1,5 +1,4 @@
 
-
 package com.guodai.activity;
 
 import com.guodai.heatpope.R;
@@ -47,7 +46,6 @@ public class EditHeatsite extends Activity {
 		x.setText(lon+"");
 		y.setText(lat+"");
 		Log.info("new edit!");
-		Log.info("Annother new edit!");
 	}
 
 	public void submit(View view){
